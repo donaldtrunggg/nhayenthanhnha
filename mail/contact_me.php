@@ -24,10 +24,12 @@ $headers = "From: noreply@yourdomain.com\n"; // This is the email address the ge
 $headers .= "Reply-To: $email_address";
 
 $email = new \SendGrid\Mail\Mail();
-$email->setFrom($headers);
-$email->setSubject($email_subject);
-$email->addTo($to);
-$email->addContent("text/plain", $email_body);
+$email->setFrom("test@example.com", "Example User");
+$email->setSubject("Sending with Twilio SendGrid is Fun");
+$email->addTo("trung.nguyen@2359media.com", "Example User");
+$email->addContent("text/plain", "and easy to do anywhere, even with PHP");
+$email->addContent(
+    "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
 );
 $sendgrid = new \SendGrid('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');
 
