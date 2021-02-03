@@ -31,6 +31,6 @@ $email->addContent("text/plain", $email_body);
 );
 $sendgrid = new \SendGrid('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');
 
-mail($to,$email_subject,$email_body,$headers);
-return true;			
+$response = $sendgrid->send($email);
+return true;
 ?>
