@@ -13,9 +13,6 @@ $name = $_POST['name'];
 $email_address = $_POST['email'];
 $message = $_POST['message'];
 
-	ini_set("SMTP", "aspmx.l.google.com");
-    ini_set("sendmail_from", "YOURMAIL@gmail.com");
-
 // Create the email and send the message
 $to = 'trung.nguyen@2359media.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 $email_subject = "Website Contact Form:  $name";
