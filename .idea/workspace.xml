@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="81012ad7-1fc1-40b6-a2a2-ff39d1ad7aab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mail/contact_me.php" beforeDir="false" afterPath="$PROJECT_DIR$/mail/contact_me.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612328135708</updated>
       <workItem from="1612328136867" duration="3747000" />
-      <workItem from="1612344493786" duration="962000" />
+      <workItem from="1612344493786" duration="4198000" />
     </task>
     <servers />
   </component>
@@ -67,5 +70,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="412" y="205" width="615" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1612344672636" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1612347074142">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1612347074142" />
   </component>
 </project>

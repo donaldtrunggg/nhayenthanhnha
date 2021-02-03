@@ -1,5 +1,4 @@
 <?php
-// Check for empty fields
 if(empty($_POST['name'])  		||
    empty($_POST['email']) 		||
    empty($_POST['message'])	||
@@ -8,28 +7,28 @@ if(empty($_POST['name'])  		||
 	echo "No arguments Provided!";
 	return false;
    }
-	
+
+require '../vendor/autoload.php';
+
 $name = $_POST['name'];
 $email_address = $_POST['email'];
 $message = $_POST['message'];
 
 // Create the email and send the message
-$to = 'trung.nguyen@2359media.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
-$email_subject = "Website Contact Form:  $name";
-$email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nMessage:\n$message";
-$headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-$headers .= "Reply-To: $email_address";
+$to = 'yensaothanhnha@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$email_subject = "Liên hệ mới từ:  $name";
+$email_body = "Bạn nhận được 1 tin nhắn mới từ người dùng website.\n\n"."Tên:\n\nName: $name\n\nEmail: $email_address\n\nNội dung:\n$message";
 
 $email = new \SendGrid\Mail\Mail();
-$email->setFrom("test@example.com", "Example User");
-$email->setSubject("Sending with Twilio SendGrid is Fun");
-$email->addTo("trung.nguyen@2359media.com", "Example User");
-$email->addContent("text/plain", "and easy to do anywhere, even with PHP");
-$email->addContent(
-    "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
-);
+$email->setFrom("yensaothanhnha@gmail.com", "User from yensaothanhnha.com");
+$email->setSubject($email_subject);
+$email->addTo("yensaothanhnha@gmail.com", "No-reply");
+$email->addContent("text/plain", $email_body);
 $sendgrid = new \SendGrid('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');
-
 $response = $sendgrid->send($email);
+
+console.log($response);
+
+
 return true;
 ?>
